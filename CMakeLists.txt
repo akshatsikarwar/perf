@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(perftest)
+include_directories(/opt/bb/include)
+link_directories(/opt/bb/lib)
+add_executable(perftest test.c)
+target_link_libraries(perftest cdb2api pthread)
